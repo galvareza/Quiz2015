@@ -13,7 +13,7 @@ media='only screen and (max-width:480px)'
 href='/stylesheet/smartphone.css' />
 </head>
 <body>
-<form method="get" action="/quizes/answer">
+<form method="get" action="/quizes/<%= quiz.id %>/answer">
 <p>Pregunta: <%= pregunta %> </p>
 <input type="text" name="respuesta" value="Responda aqui">
 <input type="submit" value="Enviar">
